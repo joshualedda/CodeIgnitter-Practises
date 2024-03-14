@@ -133,4 +133,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 //for every model created add it here
-$autoload['model'] = array('BookmarkModel');
+$autoload['model'] = array('BookmarkModel', 'ContactModel');

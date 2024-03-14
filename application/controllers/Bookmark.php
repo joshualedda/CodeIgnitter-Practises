@@ -67,7 +67,8 @@ class Bookmark extends CI_Controller {
 				$this->session->set_flashdata('success', 'Bookmark added successfully.');
 				redirect('bookmark');
 			} else {
-				echo "Failed to add bookmark. Please try again.";
+				$this->session->set_flashdata('error', 'Failed to add bookmark.');
+				redirect('bookmark');
 			}
 		}
 	}

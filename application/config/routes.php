@@ -28,6 +28,19 @@ $route['bookmark/addbookmark'] = 'bookmark/addbookmark';
 $route['bookmark/createBookMark'] = 'bookmark/createBookMark';
 
 
+//phonebook
+$route['phonebook'] = 'phonebook';
+//add
+$route['phoneboook/create'] = 'phonebook/create';
+//store
+$route['phoneboook/store'] = 'phonebook/store';
+//view contact
+$route['phonebook/(:num)'] = 'phonebook/view/$1';
+//edit and update
+$route['phonebook/(:num)'] = 'phonebook/edit/$1';
+//delete
+$route['phonebook/destroy/(:num)'] = 'phonebook/destroy/$1'; 
+
 
 
 $route['404_override'] = '';
