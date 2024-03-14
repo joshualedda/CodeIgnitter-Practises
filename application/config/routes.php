@@ -16,6 +16,20 @@ $route['money/button'] = 'moneybutton';
 //raffle draw
 $route['raffle'] = 'raffledraw';
 
+//bookmark
+$route['bookmark'] = 'bookmark';
+//view bookmark
+$route['delete/(:num)'] = 'bookmarks/delete/$1'; 
+//delete
+$route['bookmark/destroy/(:num)'] = 'bookmark/destroy/$1';
+//add
+$route['bookmark/addbookmark'] = 'bookmark/addbookmark';
+//create
+$route['bookmark/createBookMark'] = 'bookmark/createBookMark';
+
+
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
